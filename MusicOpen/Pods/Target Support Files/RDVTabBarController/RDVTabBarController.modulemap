@@ -1,0 +1,6 @@
+framework module RDVTabBarController {
+  umbrella header "RDVTabBarController-umbrella.h"
+
+  export *
+  module * { export * }
+}

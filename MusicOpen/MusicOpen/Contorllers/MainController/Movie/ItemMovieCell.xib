@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ymv-bw-VC9" customClass="ItemMovieCell">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="352"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="298" height="352"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_video_default" translatesAutoresizingMaskIntoConstraints="NO" id="zkp-ca-gl9">
+                        <rect key="frame" x="0.0" y="0.0" width="298" height="292"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.84204751253519206" green="0.84823871320284905" blue="0.86681231520582014" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrv-Xw-82N">
+                        <rect key="frame" x="0.0" y="292" width="298" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="穷爸爸富爸爸1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHI-d3-zNA">
+                                <rect key="frame" x="10" y="0.0" width="271" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f3c-zf-O6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-Pj-0L3">
+                                <rect key="frame" x="0.0" y="26" width="298" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="contentEdgeInsets" minX="9" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="播放:12000" image="card_subtitle_play">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k7e-Pj-0L3" firstAttribute="top" secondItem="PHI-d3-zNA" secondAttribute="bottom" constant="-4" id="AGD-09-pIy"/>
+                            <constraint firstAttribute="height" constant="60" id="EZV-2v-cB8"/>
+                            <constraint firstItem="PHI-d3-zNA" firstAttribute="leading" secondItem="hrv-Xw-82N" secondAttribute="leading" constant="10" id="URW-4D-Skc"/>
+                            <constraint firstItem="k7e-Pj-0L3" firstAttribute="leading" secondItem="hrv-Xw-82N" secondAttribute="leading" id="XJN-Xz-x7I"/>
+                            <constraint firstAttribute="bottom" secondItem="k7e-Pj-0L3" secondAttribute="bottom" id="mwj-bg-ER3"/>
+                            <constraint firstAttribute="trailing" secondItem="PHI-d3-zNA" secondAttribute="trailing" constant="17" id="tT1-ee-vav"/>
+                            <constraint firstAttribute="trailing" secondItem="k7e-Pj-0L3" secondAttribute="trailing" id="tns-Hy-cGV"/>
+                            <constraint firstItem="PHI-d3-zNA" firstAttribute="top" secondItem="hrv-Xw-82N" secondAttribute="top" id="vFC-mn-2G2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zkp-ca-gl9" secondAttribute="trailing" id="3LU-0h-dC8"/>
+                <constraint firstAttribute="bottom" secondItem="hrv-Xw-82N" secondAttribute="bottom" id="5z3-Fi-FhM"/>
+                <constraint firstItem="hrv-Xw-82N" firstAttribute="leading" secondItem="ymv-bw-VC9" secondAttribute="leading" id="7x6-1x-duh"/>
+                <constraint firstItem="zkp-ca-gl9" firstAttribute="leading" secondItem="ymv-bw-VC9" secondAttribute="leading" id="Beb-ct-Fki"/>
+                <constraint firstItem="hrv-Xw-82N" firstAttribute="top" secondItem="zkp-ca-gl9" secondAttribute="bottom" id="F3n-2F-lzW"/>
+                <constraint firstItem="zkp-ca-gl9" firstAttribute="top" secondItem="ymv-bw-VC9" secondAttribute="top" id="WbM-5X-gmY"/>
+                <constraint firstAttribute="trailing" secondItem="hrv-Xw-82N" secondAttribute="trailing" id="zeq-PU-2Dh"/>
+            </constraints>
+            <size key="customSize" width="298" height="352"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="0.5"/>
+                <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                    <color key="value" red="0.63341187169312163" green="0.63341187169312163" blue="0.63341187169312163" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgeView" destination="zkp-ca-gl9" id="mn6-k0-kjj"/>
+                <outlet property="movieName" destination="PHI-d3-zNA" id="LH8-J7-jKQ"/>
+                <outlet property="playNum" destination="k7e-Pj-0L3" id="359-Lu-PHz"/>
+            </connections>
+            <point key="canvasLocation" x="327" y="687"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="card_subtitle_play" width="12" height="12"/>
+        <image name="card_video_default" width="34" height="34"/>
+    </resources>
+</document>
