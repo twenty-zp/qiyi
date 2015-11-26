@@ -9,6 +9,7 @@
   * Masonry
   * ICViewPager(类似新闻左右滑动效果)
   * SDWebImage
-#效果图片如下
+
+#效果图如下
 ![首页](http://7xoj45.com1.z0.glb.clouddn.com/1.png)
 ![播放页](http://7xoj45.com1.z0.glb.clouddn.com/2.png)
