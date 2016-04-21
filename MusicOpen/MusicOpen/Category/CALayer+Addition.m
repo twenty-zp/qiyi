@@ -7,16 +7,17 @@
 //
 
 #import "CALayer+Addition.h"
-
+#import <objc/runtime.h>
+static const NSString * kBorderColor = @"kBorderColor";
 @implementation CALayer (Addition)
 
 -(void)setBorderUIColor:(UIColor*)color
 {
-    self.borderColor = color.CGColor;
+    objc_setAssociatedObject(self, &kBorderColor, color, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 -(UIColor*)borderUIColor
 {
-    return [UIColor colorWithCGColor:self.borderColor];
+    return objc_getAssociatedObject(self, &kBorderColor);
 }
 @end
 
