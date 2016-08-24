@@ -92,7 +92,7 @@
     ItemName * item = array[indexPath.row];
     MovieDetailController *player = [[MovieDetailController alloc]init];
     player.playlink = @"http://v.cctv.com/flash/mp4video1/huangjinqiangdang/2010/01/02/huangjinqiangdang_h264818000nero_aac32000_20100102_1262437187617-1.mp4"   ;//http://v.cctv.com/flash/mp4video1/huangjinqiangdang/2010/01/02/huangjinqiangdang_h264818000nero_aac32000_20100102_1262437187617-1.mp4
-    //http://pl.youku.com/playlist/m3u8?ids=%7B%22a1%22%3A%22XMTM3ODA5MjU2MA%3D%3D_flv%22%2C%22a2%22%3A%22XMTM2MTQwNzIwNA%3D%3D_flv%22%2C%22a3%22%3A%22XMTM3NjY3NzAyNA%3D%3D_flv%22%2C%22a4%22%3A%22XMTM3NzYzNjc1Mg%3D%3D_flv%22%2C%22a5%22%3A%22XMTM2MTM3OTk5Mg%3D%3D_flv%22%7D&ts=1447223936663&sid=1448671168043&ctype=21&token=8645&ev=1&oip=2130706433&ep=1acd7TNVFIvZiNJoxhpMs8AoagkMYFOXzOQHX9VUUdL4EDX%2BptNVWXl%2BpgRVoG5juNxlS4JTMunMcEQ8blJRW%2BQwe6dUPBTjiJ8vEHNtjxgM3QMLtIzqXXD16Tpm5ygHWwjXUYxq%2B07ZMSBAxuU5u15JQ%3D%3D (AVPlayer 不支持m3u8格式,不支持swf，)
+    //http://dlhls.cdn.zhanqi.tv/zqlive/18620_aVSpe.m3u8 (AVPlayer 不支持swf，)
     
     
     [self.navigationController pushViewController:player animated:YES];
