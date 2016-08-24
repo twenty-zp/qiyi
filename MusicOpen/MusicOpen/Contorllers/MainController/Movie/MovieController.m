@@ -92,7 +92,7 @@
     ItemName * item = array[indexPath.row];
     MovieDetailController *player = [[MovieDetailController alloc]init];
     player.playlink = @"http://v.cctv.com/flash/mp4video1/huangjinqiangdang/2010/01/02/huangjinqiangdang_h264818000nero_aac32000_20100102_1262437187617-1.mp4"   ;//http://v.cctv.com/flash/mp4video1/huangjinqiangdang/2010/01/02/huangjinqiangdang_h264818000nero_aac32000_20100102_1262437187617-1.mp4
-    //http://dlhls.cdn.zhanqi.tv/zqlive/18620_aVSpe.m3u8 (AVPlayer 不支持swf，)
+    //http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8 (AVPlayer 不支持swf，)
     
     
     [self.navigationController pushViewController:player animated:YES];
